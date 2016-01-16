@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tarea1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9i-P4-NGz">
+                                <rect key="frame" x="295" y="203" width="48" height="30"/>
+                                <state key="normal" title="Buscar"/>
+                                <connections>
+                                    <action selector="buscarISBN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YjX-I8-3wn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g42-yX-SUV">
+                                <rect key="frame" x="168" y="203" width="51" height="30"/>
+                                <state key="normal" title="Limpiar"/>
+                                <connections>
+                                    <action selector="limpiarTexto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P46-yn-qMC"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yoE-SU-jM8">
+                                <rect key="frame" x="262" y="346" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="bu0-e6-qHB"/>
+                                    <constraint firstAttribute="height" id="wyg-iQ-xBc"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Nd-ah-hbu">
+                                <rect key="frame" x="199" y="291" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BbX-uD-YSR"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa el ISBN del libro a buscar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-xN-3tB">
+                                <rect key="frame" x="136" y="75" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISBN:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0q-St-w14">
+                                <rect key="frame" x="132" y="136" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-7X-Fey" userLabel="ISBN">
+                                <rect key="frame" x="183" y="132" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Urr-kX-rha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                                <connections>
+                                    <action selector="buscarISBN:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="4Tf-VJ-Rop"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EZa-7X-Fey" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-153" id="0wd-kH-Zbp"/>
+                            <constraint firstItem="r0q-St-w14" firstAttribute="bottom" secondItem="EZa-7X-Fey" secondAttribute="bottom" constant="-5" id="42F-6O-dQ4"/>
+                            <constraint firstItem="EZa-7X-Fey" firstAttribute="leading" secondItem="r0q-St-w14" secondAttribute="trailing" constant="8" symbolic="YES" id="48s-4r-F8h"/>
+                            <constraint firstItem="EZa-7X-Fey" firstAttribute="top" secondItem="jS1-xN-3tB" secondAttribute="bottom" constant="36" id="7RO-81-FZf"/>
+                            <constraint firstItem="yoE-SU-jM8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-38" id="ESU-iC-kqK"/>
+                            <constraint firstItem="yoE-SU-jM8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="46" id="K11-dv-hhF"/>
+                            <constraint firstItem="EZa-7X-Fey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="KG2-Bv-HfX"/>
+                            <constraint firstItem="7Nd-ah-hbu" firstAttribute="centerX" secondItem="i9i-P4-NGz" secondAttribute="centerX" id="RMy-sT-sTQ"/>
+                            <constraint firstItem="jS1-xN-3tB" firstAttribute="centerX" secondItem="yoE-SU-jM8" secondAttribute="centerX" id="f5x-wR-fSU"/>
+                            <constraint firstItem="g42-yX-SUV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-106.5" id="hGd-Ai-teE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Nd-ah-hbu" secondAttribute="bottom" constant="181" id="liQ-wE-ffk"/>
+                            <constraint firstItem="i9i-P4-NGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="19" id="mkO-ij-YvM"/>
+                            <constraint firstItem="i9i-P4-NGz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-82" id="pqH-BV-kuL"/>
+                            <constraint firstItem="7Nd-ah-hbu" firstAttribute="top" secondItem="g42-yX-SUV" secondAttribute="bottom" constant="58" id="t4Z-bJ-b2g"/>
+                            <constraint firstItem="g42-yX-SUV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-82" id="xMM-NX-ggh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ISBNText" destination="EZa-7X-Fey" id="JyO-gH-Bap"/>
+                        <outlet property="textView" destination="7Nd-ah-hbu" id="acZ-e9-svJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="291"/>
+        </scene>
+    </scenes>
+</document>
